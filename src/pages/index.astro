@@ -11,9 +11,10 @@ import BlogLatestPosts from '~/components/widgets/BlogLatestPosts.astro';
 import FAQs from '~/components/widgets/FAQs.astro';
 import Stats from '~/components/widgets/Stats.astro';
 import CallToAction from '~/components/widgets/CallToAction.astro';
+import HeroBigGrid from '~/components/ui/HeroBigGrid.astro';
 
 const metadata = {
-  title: 'AstroWind — Free template for creating websites with Astro + Tailwind CSS',
+  title: 'SRE - Stark Real State',
   ignoreTitleTemplate: true,
 };
 ---
@@ -21,34 +22,23 @@ const metadata = {
 <Layout metadata={metadata}>
   <!-- Hero Widget ******************* -->
 
-  <Hero
-    actions={[
-      {
-        variant: 'primary',
-        text: 'Get template',
-        href: 'https://github.com/onwidget/astrowind',
-        target: '_blank',
-        icon: 'tabler:download',
-      },
-      { text: 'Learn more', href: '#features' },
-    ]}
-    image={{ src: '~/assets/images/hero-image.png', alt: 'AstroWind Hero Image' }}
-  >
+  <Hero>
     <Fragment slot="title">
-      Free template for <span class="hidden xl:inline">creating websites with</span>
-      <span class="text-accent dark:text-white highlight"> Astro 4.0</span> + Tailwind CSS
+      <span class=" dark:text-white highlight">Stark Real Estate</span>
+      <span class="hidden xl:inline"></span>
     </Fragment>
 
     <Fragment slot="subtitle">
-      <span class="hidden sm:inline">
-        <span class="font-semibold">AstroWind</span> is a free, customizable and production-ready template for Astro 4.0
-        + Tailwind CSS.</span
-      >
-      <span class="block mb-1 sm:hidden font-bold text-blue-600">AstroWind: Production-ready.</span>
-      Suitable for Startups, Small Business, SaaS websites, Professional Portfolios, Marketing websites, Landing Pages &
-      Blogs.
+      <span class="">
+        <!--span class="font-semibold">"Liderando en inversión con clientes diversos."</span-->
+        <span class="font-semibold">"Transformando inversiones, conectando clientes."</span>
+      </span>
     </Fragment>
   </Hero>
+  
+  <!-- HeroBigGrid Widget ******************* -->
+  
+  <HeroBigGrid />
 
   <!-- Note Widget ******************* -->
 
@@ -56,17 +46,17 @@ const metadata = {
 
   <!-- Features Widget *************** -->
 
-  <Features
+  <!--<Features
     id="features"
-    tagline="Features"
-    title="What you get with AstroWind"
-    subtitle="One of the most professional and comprehensive templates currently on the market. Most starred & forked Astro theme in 2022."
+    tagline="Proyecto"
+    title="Patagonian Insular"
+    subtitle='"El sueño de vivir en paz hecho realidad"'
     items={[
       {
         title: 'Astro + Tailwind CSS Integration',
         description:
           'A seamless integration between two great frameworks that offer high productivity, performance and versatility.',
-        icon: 'tabler:brand-tailwind',
+        icon: 'tabler:tree',
       },
       {
         title: 'Ready-to-use Components',
@@ -99,14 +89,16 @@ const metadata = {
         icon: 'tabler:bulb',
       },
     ]}
-  />
+  />-->
 
   <!-- Content Widget **************** -->
 
   <Content
     isReversed
-    tagline="Inside template"
-    title="AstroWind's Blueprint: Fun Meets Functionality!"
+    id="content"
+    tagline="Proyecto"
+    title="Patagonian Insular"
+    subtitle='"El sueño de vivir en paz hecho realidad"'
     items={[
       {
         title: 'Built on top of Astro 4.0',
@@ -314,13 +306,13 @@ const metadata = {
 
   <!-- HighlightedPosts Widget ******* -->
 
-  <BlogLatestPosts
+  <!--BlogLatestPosts
     title="Find out more content in our Blog"
     information={`The blog is used to display AstroWind documentation.
                         Each new article will be an important step that you will need to know to be an expert in creating a website using Astro + Tailwind CSS.
                         Astro is a very interesting technology. Thanks.
                 `}
-  />
+  /-->
 
   <!-- FAQs Widget ******************* -->
 
@@ -376,7 +368,7 @@ const metadata = {
 
   <!-- CallToAction Widget *********** -->
 
-  <CallToAction
+  <!--CallToAction
     actions={[
       {
         variant: 'primary',
@@ -395,5 +387,5 @@ const metadata = {
       Be very surprised by these huge fake numbers you are seeing on this page. <br class="hidden md:inline" />Don't
       waste more time! :P
     </Fragment>
-  </CallToAction>
+  </CallToAction-->
 </Layout>
