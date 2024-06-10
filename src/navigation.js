@@ -4,7 +4,8 @@ export const headerData = {
   links: [
     {
       text: 'Inicio',
-      links: [
+      href: getPermalink('#')
+      /*links: [
         {
           text: 'SaaS',
           href: getPermalink('/homes/saas'),
@@ -21,7 +22,7 @@ export const headerData = {
           text: 'Personal',
           href: getPermalink('/homes/personal'),
         },
-      ],
+      ],*/
     },
     {
       text: 'Proyectos',
@@ -29,7 +30,7 @@ export const headerData = {
         {
           text: 'Patagonian Insular',
           href: getPermalink('/#content'),
-        },
+        }/*,
         {
           text: 'Services',
           href: getPermalink('/services'),
@@ -53,12 +54,12 @@ export const headerData = {
         {
           text: 'Privacy policy',
           href: getPermalink('/privacy'),
-        },
+        },*/
       ],
     },
     {
       text: 'Inversiones',
-      links: [
+      /*links: [
         {
           text: 'Lead Generation',
           href: getPermalink('/landing/lead-generation'),
@@ -83,7 +84,7 @@ export const headerData = {
           text: 'Subscription',
           href: getPermalink('/landing/subscription'),
         },
-      ],
+      ],*/
     },
     {
       text: 'Dudas',
