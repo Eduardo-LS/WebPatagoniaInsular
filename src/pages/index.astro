@@ -3,14 +3,9 @@ import Layout from '~/layouts/PageLayout.astro';
 
 import Hero from '~/components/widgets/Hero.astro';
 import Note from '~/components/widgets/Note.astro';
-//import Features from '~/components/widgets/Features.astro';
 import Features2 from '~/components/widgets/Features2.astro';
 import Steps from '~/components/widgets/Steps.astro';
 import Content from '~/components/widgets/Content.astro';
-//import BlogLatestPosts from '~/components/widgets/BlogLatestPosts.astro';
-import FAQs from '~/components/widgets/FAQs.astro';
-import Stats from '~/components/widgets/Stats.astro';
-//import CallToAction from '~/components/widgets/CallToAction.astro';
 import HeroBigGrid from '~/components/ui/HeroBigGrid.astro';
 
 const metadata = {
@@ -35,10 +30,6 @@ const metadata = {
       </span>
     </Fragment>
   </Hero>
-  
-  <!-- HeroBigGrid Widget ******************* -->
-  
-  <!--HeroBigGrid /-->
 
   <!-- Features Widget *************** -->
 
@@ -112,10 +103,6 @@ const metadata = {
           'Tanto por su gastronomía y su ubicación geográfica, por encontrarse a un costado del Parque Nacional de Chiloé, un lugar de exuberante vegetación, flora y fauna.',
       },
     ]}
-    image={{
-      src: 'https://images.unsplash.com/photo-1519389950473-47ba0277781c?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80',
-      alt: 'Colorful Image',
-    }}
   >
     <Fragment slot="content">
       <h3 class="text-2xl font-bold tracking-tight dark:text-white sm:text-3xl mb-2">Invertir También es Preservar</h3>
@@ -240,69 +227,40 @@ const metadata = {
     }}
   />
 
+    <!-- HeroBigGrid Widget ******************* -->
+  
+    <HeroBigGrid />
+
   <!-- Features2 Widget ************** -->
-<Features2 />
-  <!--Features2
-    title="Most used widgets"
-    subtitle="Provides frequently used components for building websites using Tailwind CSS"
-    tagline="Components"
+
+  <Features2
+    title="Inversiones"
+    subtitle="Real Estate Info"
+    tagline="Transformando Espacios y Experiencias"
     items={[
       {
-        title: 'Headers',
-        description: "Ever tried driving without GPS? Boom! That's why websites need headers for direction.",
+        title: 'Necesitas un bajo capital de inversión',
+        description: "Para invertir en un departamento, solo necesitas el pie, que puede pagarse al contado, en cuotas con cheques, o con Tarjeta de Crédito sin interés.",
         icon: 'flat-color-icons:template',
       },
       {
-        title: 'Heros',
+        title: 'Inversión segura y estable',
         description:
-          "Picture a superhero landing – epic, right? That's the job of a Hero section, making grand entrances!",
+          "La rentabilidad y plusvalía son clave, por eso nuestros proyectos están cerca de metro, autopistas y servicios, aumentando la demanda de arriendo.",
         icon: 'flat-color-icons:gallery',
       },
       {
-        title: 'Features',
+        title: 'Aumentas tu patrimonio y mejoras tu jubilación',
         description:
-          'Where websites strut their stuff and show off superpowers. No holding back on the bragging rights here!',
+          'El mercado inmobiliario es una inversión rentable y segura frente a la volatilidad de otros instrumentos financieros.',
         icon: 'flat-color-icons:approval',
-      },
-      {
-        title: 'Content',
-        description:
-          "Dive into the meat and potatoes of a site; without it, you'd just be window shopping. Content is king.",
-        icon: 'flat-color-icons:document',
-      },
-      {
-        title: 'Call-to-Action',
-        description:
-          'That enthusiastic friend who\'s always urging, "Do it! Do it!"? Yeah, that\'s this button nudging you towards adventure.',
-        icon: 'flat-color-icons:advertising',
-      },
-      {
-        title: 'Pricing',
-        description: 'Behold the dessert menu of the website world. Tempting choices await, can you resist?',
-        icon: 'flat-color-icons:currency-exchange',
-      },
-      {
-        title: 'Testimonial',
-        description: 'Step into the gossip corner! Here, other visitors spill the beans and share the juicy details.',
-        icon: 'flat-color-icons:voice-presentation',
-      },
-      {
-        title: 'Contact',
-        description:
-          'Like a digital mailbox, but faster! Drop a line, ask a question, or send a virtual high-five. Ding! Message in.',
-        icon: 'flat-color-icons:business-contact',
-      },
-      {
-        title: 'Footers',
-        description: "The footer's like the credits of a movie but sprinkled with easter eggs. Time to hunt!",
-        icon: 'flat-color-icons:database',
       },
     ]}
   >
     <Fragment slot="bg">
       <div class="absolute inset-0 bg-blue-50 dark:bg-transparent"></div>
     </Fragment>
-  </Features2-->
+  </Features2>
 
   <!-- HighlightedPosts Widget ******* -->
 
@@ -316,7 +274,7 @@ const metadata = {
 
   <!-- FAQs Widget ******************* -->
 
-  <FAQs
+  <!--FAQs
     title="Frequently Asked Questions"
     subtitle="Dive into the following questions to gain insights into the powerful features that AstroWind offers and how it can elevate your web development journey."
     tagline="FAQs"
@@ -353,18 +311,18 @@ const metadata = {
           "This is not about revenge. This is about justice. A lot of things can change in twelve years, Admiral. Well, that's certainly good to know. About four years. I got tired of hearing how young I looked.",
       },
     ]}
-  />
+  /-->
 
   <!-- Stats Widget ****************** -->
 
-  <Stats
+  <!--Stats
     stats={[
       { title: 'Downloads', amount: '132K' },
       { title: 'Stars', amount: '24.8K' },
       { title: 'Forks', amount: '10.3K' },
       { title: 'Users', amount: '48.4K' },
     ]}
-  />
+  /-->
 
   <!-- CallToAction Widget *********** -->
 
