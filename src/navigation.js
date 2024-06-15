@@ -4,7 +4,7 @@ export const headerData = {
   links: [
     {
       text: 'Inicio',
-      href: getPermalink('#')
+      href: getPermalink('/#hero')
       /*links: [
         {
           text: 'SaaS',
@@ -59,12 +59,13 @@ export const headerData = {
     },
     {
       text: 'Inversiones',
+      href: getPermalink('/#Inversiones'),
       /*links: [
         {
           text: 'Lead Generation',
           href: getPermalink('/landing/lead-generation'),
         },
-        {
+        z{
           text: 'Long-form Sales',
           href: getPermalink('/landing/sales'),
         },
@@ -86,7 +87,7 @@ export const headerData = {
         },
       ],*/
     },
-    {
+    /*{
       text: 'Dudas',
       links: [
         {
@@ -110,10 +111,10 @@ export const headerData = {
           href: getPermalink('astro', 'tag'),
         },
       ],
-    },
+    },*/
     {
       text: 'Contáctanos',
-      href: '#',
+      href: 'contact', 
     },
   ],
   //actions: [{ text: 'Download', href: 'https://github.com/onwidget/astrowind', target: '_blank' }],
@@ -121,7 +122,7 @@ export const headerData = {
 
 export const footerData = {
   links: [
-    {
+    /*{
       title: 'Product',
       links: [
         { text: 'Features', href: '#' },
@@ -164,7 +165,7 @@ export const footerData = {
         { text: 'Social Impact', href: '#' },
         { text: 'Shop', href: '#' },
       ],
-    },
+    },*/
   ],
   secondaryLinks: [
     { text: 'Terms', href: getPermalink('/terms') },
