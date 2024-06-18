@@ -25,36 +25,24 @@ export const headerData = {
       ],*/
     },
     {
-      text: 'Proyectos',
+      text: 'Proyecto',
       links: [
         {
-          text: 'Patagonian Insular',
+          text: 'Patagonia Insular',
           href: getPermalink('/#content'),
-        }/*,
-        {
-          text: 'Services',
-          href: getPermalink('/services'),
         },
         {
-          text: 'Pricing',
-          href: getPermalink('/pricing'),
+          text: '¿Cómo llegar?',
+          href: getPermalink('/#steps'),
         },
         {
-          text: 'About us',
-          href: getPermalink('/about'),
+          text: 'Ubicación',
+          href: getPermalink('/#Ubicacion'),
         },
         {
-          text: 'Contact',
-          href: getPermalink('/contact'),
+          text: 'Galería',
+          href: getPermalink('/#hero-big-grid')
         },
-        {
-          text: 'Terms',
-          href: getPermalink('/terms'),
-        },
-        {
-          text: 'Privacy policy',
-          href: getPermalink('/privacy'),
-        },*/
       ],
     },
     {
@@ -113,9 +101,17 @@ export const headerData = {
       ],
     },*/
     {
+      text: 'Bonos verdes',
+      href: getPermalink('/#')
+    },
+    {
+      text: 'Cercanías',
+      href: getPermalink('/#')
+    },
+    /*{
       text: 'Contáctanos',
       href: 'contact', 
-    },
+    },*/
   ],
   //actions: [{ text: 'Download', href: 'https://github.com/onwidget/astrowind', target: '_blank' }],
 };
