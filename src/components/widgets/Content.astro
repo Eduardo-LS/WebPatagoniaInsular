@@ -4,8 +4,10 @@ import Headline from '../ui/Headline.astro';
 import WidgetWrapper from '../ui/WidgetWrapper.astro';
 import Button from '~/components/ui/Button.astro';
 import ItemGrid from '../ui/ItemGrid.astro';
+import Image from '~/components/common/Image.astro';
 
 const {
+  image = await Astro.slots.render('image'),
   title = await Astro.slots.render('title'),
   subtitle = await Astro.slots.render('subtitle'),
   tagline,
@@ -64,7 +66,26 @@ const {
         />
       </div>
       <div aria-hidden="true" class="mt-10 md:mt-0 md:basis-1/2">
-        <image class="mx-auto w-full rounded-lg bg-gray-500 shadow-lg" src="https://realestate.neighbour.cl/media/proyecto_img1.webp">
+        <!--image class="mx-auto w-full rounded-lg bg-gray-500 shadow-lg" src="https://realestate.neighbour.cl/media/proyecto_img1.webp"-->
+        {
+          image && (
+            <div class="relative m-auto max-w-4xl">
+              {typeof image === 'string' ? (
+                <Fragment set:html={image} />
+              ) : (
+                <Image
+                  class="mx-auto w-full rounded-lg bg-gray-500 shadow-lg"
+                  width={500}
+                  height={500}
+                  widths={[400, 768]}
+                  sizes="(max-width: 768px) 100vw, 432px"
+                  layout="responsive"
+                  {...image}
+                />
+              )}
+            </div>
+          )
+        }
       </div>
     </div>
   </div>

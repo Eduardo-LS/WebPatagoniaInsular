@@ -1,4 +1,4 @@
-import { getPermalink, getBlogPermalink, getAsset } from './utils/permalinks';
+import { getPermalink } from './utils/permalinks';
 
 export const headerData = {
   links: [
@@ -43,6 +43,14 @@ export const headerData = {
           text: 'Galería',
           href: getPermalink('/#hero-big-grid')
         },
+        {
+          text: 'Flora y Fauna',
+          href: getPermalink('homes/personal')
+        },
+        {
+          text: 'Cercanías',
+          href: getPermalink('/#')
+        }
       ],
     },
     {
@@ -101,11 +109,7 @@ export const headerData = {
       ],
     },*/
     {
-      text: 'Bonos verdes',
-      href: getPermalink('/#')
-    },
-    {
-      text: 'Cercanías',
+      text: 'Bonos_verdes',
       href: getPermalink('/#')
     },
     /*{
@@ -113,7 +117,7 @@ export const headerData = {
       href: 'contact', 
     },*/
   ],
-  //actions: [{ text: 'Download', href: 'https://github.com/onwidget/astrowind', target: '_blank' }],
+  actions: [{ text: 'Download', href: 'https://github.com/onwidget/astrowind', target: '_blank' }],
 };
 
 export const footerData = {

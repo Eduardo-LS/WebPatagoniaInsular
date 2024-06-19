@@ -3,12 +3,13 @@ import Layout from '~/layouts/PageLayout.astro';
 
 import Hero from '~/components/widgets/Hero.astro';
 import Note from '~/components/widgets/Note.astro';
-import Features2 from '~/components/widgets/Features2.astro';
+//import Features2 from '~/components/widgets/Features2.astro';
 import Steps from '~/components/widgets/Steps.astro';
 import Content from '~/components/widgets/Content.astro';
-import HeroBigGrid from '~/components/ui/HeroBigGrid.astro';
-import BlogLatestPosts from '~/components/widgets/BlogLatestPosts.astro';
+//import HeroBigGrid from '~/components/ui/HeroBigGrid.astro';
+//import BlogLatestPosts from '~/components/widgets/BlogLatestPosts.astro';
 import FAQs from '~/components/widgets/FAQs.astro';
+import Brands from '~/components/widgets/Brands.astro';
 
 const metadata = {
   title: 'SRE - Stark Real State',
@@ -105,6 +106,10 @@ const metadata = {
           'Tanto por su gastronomía y su ubicación geográfica, por encontrarse a un costado del Parque Nacional de Chiloé, un lugar de exuberante vegetación, flora y fauna.',
       },
     ]}
+    image={{
+      src: 'https://neighbourspa-176512119.imgix.net/proyecto_img1.webp',
+      alt: 'Colorful Image',
+    }}
   >
     <Fragment slot="content">
       <h3 class="text-2xl font-bold tracking-tight dark:text-white sm:text-3xl mb-2">Invertir También es Preservar</h3>
@@ -232,11 +237,11 @@ const metadata = {
 
     <!-- HeroBigGrid Widget ******************* -->
   
-    <HeroBigGrid id="hero-big-grid" />
+    <!--HeroBigGrid id="hero-big-grid" /-->
 
   <!-- Features2 Widget ************** -->
 
-  <Features2
+  <!--Features2
     id="Inversiones"
     title="Inversiones"
     subtitle="Real Estate Info"
@@ -264,7 +269,8 @@ const metadata = {
     <Fragment slot="bg">
       <div class="absolute inset-0 bg-blue-50 dark:bg-transparent"></div>
     </Fragment>
-  </Features2>
+  </Features2-->
+ 
 
   <!-- HighlightedPosts Widget ******* -->
 
@@ -319,10 +325,39 @@ const metadata = {
   <FAQs
     title="Ubicación"
     id="Ubicacion"
-    subtitle="Dive."
+    subtitle=""
     classes={{ container: 'max-w-6xl' }}
-    >
+    />
 
+  <Brands
+  id="Inversiones"
+  title="Inversiones"
+  subtitle=""
+  icons={[]}
+  images={[
+    {
+      src: 'https://neighbourspa-176512119.imgix.net/logo-Arenas.png',
+      alt: 'Grupo Arenas',
+    },
+    {
+      src: 'https://neighbourspa-176512119.imgix.net/logo-patagonian.webp',
+      alt: 'Patagonia Insular',
+    },
+    {
+      src: 'https://realestate.enterprises.cl/wp-content/uploads/2021/06/logo-pilares-175x50-c-center.png',
+      alt: 'Pilares',
+    },
+
+    {
+      src: 'https://realestate.enterprises.cl/wp-content/uploads/2021/06/logo-Vial-copia-150x50-1.png',
+      alt: 'Vial Siglo XXII',
+    },
+    {
+      src: 'https://realestate.enterprises.cl/wp-content/uploads/2021/06/Socovesa.png',
+      alt: 'Socovesa',
+    },
+  ]}
+/>
   <!-- Stats Widget ****************** -->
 
   <!--Stats

@@ -1,6 +1,6 @@
 ---
 import Headline from '~/components/ui/Headline.astro';
-import ItemGrid from '~/components/ui/ItemGrid.astro';
+//import ItemGrid from '~/components/ui/ItemGrid.astro';
 import WidgetWrapper from '~/components/ui/WidgetWrapper.astro';
 import type { Faqs as Props } from '~/types';
 
@@ -18,9 +18,9 @@ const {
 } = Astro.props;
 ---
 
-<WidgetWrapper id={id} isDark={isDark} containerClass={`max-w-7xl mx-auto ${classes?.container ?? ''}`} bg={bg}>
+<!--WidgetWrapper id={id} isDark={isDark} containerClass={`max-w-7xl mx-auto ${classes?.container ?? ''}`} bg={bg}>
   <Headline title={title} subtitle={subtitle} tagline={tagline} />
-  <!--ItemGrid
+  <ItemGrid
     items={items}
     columns={columns}
     defaultIcon="tabler:chevron-right"
@@ -29,6 +29,18 @@ const {
       panel: 'max-w-none',
       icon: 'flex-shrink-0 mt-1 w-6 h-6 text-primary',
     }}
-  /-->
+  />
   
+</WidgetWrapper-->
+
+<WidgetWrapper id={id} isDark={isDark} containerClass={`max-w-7xl mx-auto ${classes?.container ?? ''}`} bg={bg}>
+  <Headline title={title} subtitle={subtitle} tagline={tagline} />
+  <div class="flex justify-center">
+    <iframe src="https://www.google.com/maps/embed?pb=!1m17!1m12!1m3!1d47388.05950685794!2d-74.03517206942529!3d-42.069898038465745!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zNDLCsDA0JzI1LjciUyA3NMKwMDAnMzUuNSJX!5e0!3m2!1sen!2scl!4v1718828881431!5m2!1sen!2scl" 
+      width="2000"  
+      height="600"
+      style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
+    </iframe>
+  </div>
 </WidgetWrapper>
+

@@ -1,15 +1,15 @@
 ---
 import Layout from '~/layouts/PageLayout.astro';
 
-import Header from '~/components/widgets/Header.astro';
+//import Header from '~/components/widgets/Header.astro';
 import Hero from '~/components/widgets/Hero.astro';
 import Content from '~/components/widgets/Content.astro';
-import CallToAction from '~/components/widgets/CallToAction.astro';
-import Features3 from '~/components/widgets/Features3.astro';
-import Testimonials from '~/components/widgets/Testimonials.astro';
-import Steps from '~/components/widgets/Steps.astro';
-import BlogLatestPosts from '~/components/widgets/BlogLatestPosts.astro';
-import { getPermalink } from '~/utils/permalinks';
+//import CallToAction from '~/components/widgets/CallToAction.astro';
+//import Features3 from '~/components/widgets/Features3.astro';
+//import Testimonials from '~/components/widgets/Testimonials.astro';
+//import Steps from '~/components/widgets/Steps.astro';
+//import BlogLatestPosts from '~/components/widgets/BlogLatestPosts.astro';
+//import { getPermalink } from '~/utils/permalinks';
 
 const metadata = {
   title: 'Personal Homepage Demo',
@@ -17,7 +17,7 @@ const metadata = {
 ---
 
 <Layout metadata={metadata}>
-  <Fragment slot="announcement"></Fragment>
+  <!--Fragment slot="announcement"></Fragment>
   <Fragment slot="header">
     <Header
       links={[
@@ -37,21 +37,15 @@ const metadata = {
       isSticky
       showToggleTheme
     />
-  </Fragment>
+  </Fragment-->
 
   <!-- Hero2 Widget ******************* -->
 
   <Hero
     id="hero"
-    title="Sarah Johnson"
-    tagline="Personal Web Demo"
-    actions={[{ variant: 'primary', text: 'Hire me', href: getPermalink('/contact#form') }]}
+    title="El archipiélago de Chiloé en el hemisferio sur permite el desarrollo de un bosque único en el mundo"
+    tagline="Patagonia Insular"
   >
-    <Fragment slot="subtitle">
-      I'm a Graphic Designer passionate about crafting visual stories. <br /> With 5 years of experience and a degree from
-      New York University's School of Design. I infuse vitality into brands and designs, transforming concepts into captivating
-      realities.
-    </Fragment>
   </Hero>
 
   <!-- Content Widget **************** -->
@@ -59,51 +53,26 @@ const metadata = {
   <Content
     id="about"
     columns={3}
-    items={[
-      {
-        icon: 'tabler:brand-dribbble',
-        callToAction: {
-          target: '_blank',
-          text: 'Dribbble',
-          href: '#',
-        },
-      },
-      {
-        icon: 'tabler:brand-behance',
-        callToAction: {
-          target: '_blank',
-          text: 'Behance',
-          href: '#',
-        },
-      },
-      {
-        icon: 'tabler:brand-pinterest',
-        callToAction: {
-          target: '_blank',
-          text: 'Pinterest',
-          href: '#',
-        },
-      },
-    ]}
     image={{
-      src: 'https://images.unsplash.com/photo-1491349174775-aaafddd81942?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=774&q=80',
+      src: 'https://neighbourspa-176512119.imgix.net/flora.webp',
       alt: 'Colorful Image',
       loading: 'eager',
     }}
   >
     <Fragment slot="content">
-      <h2 class="text-2xl font-bold tracking-tight dark:text-white sm:text-3xl mb-2">About me</h2>
+      <h2 class="text-2xl font-bold tracking-tight dark:text-white sm:text-3xl mb-2">Especies Vegetales del Archipiélago</h2>
       <p>
-        Welcome to my creative journey. My work is a testament to my commitment to bringing ideas to life, where each
-        pixel becomes a brushstroke in the canvas of imagination.
+        El Proyecto cuenta con un denso bosque que ha sido protegido y que debe preservarse por los propietarios
+        al encontrar arboles tan bellos y milenarios como el Alerce.
+      <br/>
+      <br/>
+        En cuanto a otras especies vegetales presentes en el
+        Archipiélago de Chiloé destacamos la papa que
+        posee cerca de 400 variedades, el ajo chilote, la
+        nalca (pangue), la frutilla de arena, el carrizo, el
+        chupón (Fascicularia bicolor), la murta, la grosella, los
+        calafates y la rosa mosqueta.
       </p>
-      <br />
-      <p>
-        I find inspiration in the world around me, whether through the pages of a captivating novel, the intricate
-        details of typography, or the vibrant hues of nature during my outdoor escapades.
-      </p>
-      <br />
-      <p>If you're curious to dive deeper into my work, you can follow me:</p>
     </Fragment>
 
     <Fragment slot="bg">
@@ -113,7 +82,7 @@ const metadata = {
 
   <!-- Steps Widget ****************** -->
 
-  <Steps
+  <!--Steps
     id="resume"
     title="Work experience"
     items={[
@@ -131,11 +100,11 @@ const metadata = {
       },
     ]}
     classes={{ container: 'max-w-3xl' }}
-  />
+  /-->
 
   <!-- Steps Widget ****************** -->
 
-  <Steps
+  <!--Steps
     id="resume"
     title="Education"
     items={[
@@ -149,11 +118,11 @@ const metadata = {
       },
     ]}
     classes={{ container: 'max-w-3xl' }}
-  />
+  /-->
 
   <!-- Features3 Widget ************** -->
 
-  <Features3
+  <!--Features3
     title="Skills"
     subtitle="Discover the proficiencies that allow me to bring imagination to life through design."
     columns={3}
@@ -196,41 +165,35 @@ const metadata = {
         description: 'Quick to adapt to new design trends, technologies, and client preferences.',
       },
     ]}
-  />
+  /-->
 
   <!-- Content Widget **************** -->
 
   <Content
     id="porfolio"
-    title="Elevating visual narratives"
-    subtitle="Embark on a design journey that surpasses pixels, entering a realm of imagination. Explore my portfolio, where passion and creativity converge to shape enthralling visual narratives."
-    isReversed
+    title="Fauna  Chilota"
+    subtitle=""
+    
     items={[
       {
-        title: 'Description:',
+        title: '',
         description:
-          'Developed a comprehensive brand identity for a tech startup, Tech Innovators, specializing in disruptive innovations. The goal was to convey a modern yet approachable image that resonated with both corporate clients and tech enthusiasts.',
+          'Habitan zorros chilotes, pudúes, monitos del monte, ranitas de Darwin, gatos colocolo o guiña, comadrejas trompudas, caballos chilotes o mampatos y aves como el Chucao, la bandurria, el jote, el traile, la golondrina, el gorrión.',
       },
       {
-        title: 'Role:',
+        title: '',
         description:
-          'Led the entire branding process from concept to execution. Created a dynamic logo that symbolized innovation, selected a vibrant color palette, and I designed corporate stationery, website graphics, and social media assets.',
+          'El loro choroy, el picaflor, el caiquén, el cometocino patagónico, el queltehue, la bandurria, la diuca, el chercán de las vegas, el churrete, el chincol, el zorzal, el jergón, el chorlo, el wilco, el fiofío, el mirlo y muchos más.',
       },
     ]}
     image={{
-      src: 'https://images.unsplash.com/photo-1658248165252-71e116af1b34?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=928&q=80',
-      alt: 'Tech Design Image',
-    }}
-    callToAction={{
-      target: '_blank',
-      text: 'Go to the project',
-      icon: 'tabler:chevron-right',
-      href: '#',
+      src: 'https://neighbourspa-176512119.imgix.net/fauna1.webp',
+      alt: 'Fauna1',
     }}
   >
     <Fragment slot="content">
       <h3 class="text-2xl font-bold tracking-tight dark:text-white sm:text-3xl mb-2">
-        Project 1: <br /><span class="text-2xl">Brand identity for tech innovators</span>
+        Paisaje Terrestre<br /><span class="text-2xl"></span>
       </h3>
     </Fragment>
 
@@ -246,29 +209,27 @@ const metadata = {
     isAfterContent={true}
     items={[
       {
-        title: 'Description:',
+        title: '',
         description:
-          'Designed a captivating event poster for an art and music festival, "ArtWave Fusion," aiming to showcase the synergy between visual art and music genres.',
+          'En el ambiente marino por su parte conviven aves como las gaviotas, cisnes de cuello negro, el Martín pescador, el flamenco, los cormoranes, diferentes tipos de patos, garzas, zarapitos, tiuques, y mamíferos como el chungungo.',
       },
       {
-        title: 'Role:',
-        description: `Translated the festival's creative theme into a visually striking poster. Used bold typography, vibrant colors, and abstract elements to depict the fusion of art and music. Ensured the design captured the festival's vibrant atmosphere.`,
+        title: '',
+        description: `el huillín (nutria), los
+lobos de mar de dos pelos y de un pelo, pingüinos
+de Humboldt y pingüinos de Magallanes, las toninas
+(delfines) y la ballena azul que se cría en el Golfo de
+Corcovado.`,
       },
     ]}
     image={{
-      src: 'https://images.unsplash.com/photo-1619983081563-430f63602796?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=774&q=80',
-      alt: 'Art and Music Poster Image',
-    }}
-    callToAction={{
-      target: '_blank',
-      text: 'Go to the project',
-      icon: 'tabler:chevron-right',
-      href: '#',
+      src: 'https://neighbourspa-176512119.imgix.net/pinguinos.webp',
+      alt: 'Pinguinos',
     }}
   >
     <Fragment slot="content">
       <h3 class="text-2xl font-bold tracking-tight dark:text-white sm:text-3xl mb-2">
-        Project 2: <br /><span class="text-2xl">Event poster for art & music festival</span>
+        Paisaje Marino<span class="text-2xl"></span>
       </h3>
     </Fragment>
 
@@ -279,7 +240,7 @@ const metadata = {
 
   <!-- Content Widget **************** -->
 
-  <Content
+  <!--Content
     isReversed
     isAfterContent={true}
     items={[
@@ -312,11 +273,11 @@ const metadata = {
     <Fragment slot="bg">
       <div class="absolute inset-0 bg-blue-50 dark:bg-transparent"></div>
     </Fragment>
-  </Content>
+  </Content-->
 
   <!-- Testimonials Widget *********** -->
 
-  <Testimonials
+  <!--Testimonials
     title="Client testimonials"
     subtitle="Discover what clients have to say about their experiences working with me."
     testimonials={[
@@ -375,11 +336,11 @@ const metadata = {
         },
       },
     ]}
-  />
+  /-->
 
   <!-- CallToAction Widget *********** -->
 
-  <CallToAction
+  <!--CallToAction
     title="Let's create together"
     subtitle="Ready to transform your vision into captivating designs?"
     actions={[
@@ -389,11 +350,11 @@ const metadata = {
         href: '/',
       },
     ]}
-  />
+  /-->
 
   <!-- BlogLatestPost Widget **************** -->
 
-  <BlogLatestPosts
+  <!--BlogLatestPosts
     id="blog"
     title="Explore my insightful articles on my blog"
     information={`Dive into a realm of design wisdom and creative inspiration, where you'll find invaluable insights, practical tips, and captivating narratives that elevate and enrich your creative journey.`}
@@ -401,5 +362,5 @@ const metadata = {
     <Fragment slot="bg">
       <div class="absolute inset-0 bg-blue-50 dark:bg-transparent"></div>
     </Fragment>
-  </BlogLatestPosts>
+  </BlogLatestPosts-->
 </Layout>
