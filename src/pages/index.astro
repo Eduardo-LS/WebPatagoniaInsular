@@ -3,10 +3,10 @@ import Layout from '~/layouts/PageLayout.astro';
 
 import Hero from '~/components/widgets/Hero.astro';
 import Note from '~/components/widgets/Note.astro';
-//import Features2 from '~/components/widgets/Features2.astro';
+import Features2 from '~/components/widgets/Features2.astro';
 import Steps from '~/components/widgets/Steps.astro';
 import Content from '~/components/widgets/Content.astro';
-//import HeroBigGrid from '~/components/ui/HeroBigGrid.astro';
+import HeroBigGrid from '~/components/ui/HeroBigGrid.astro';
 //import BlogLatestPosts from '~/components/widgets/BlogLatestPosts.astro';
 import FAQs from '~/components/widgets/FAQs.astro';
 import Brands from '~/components/widgets/Brands.astro';
@@ -235,43 +235,6 @@ const metadata = {
     }}
   />
 
-    <!-- HeroBigGrid Widget ******************* -->
-  
-    <!--HeroBigGrid id="hero-big-grid" /-->
-
-  <!-- Features2 Widget ************** -->
-
-  <!--Features2
-    id="Inversiones"
-    title="Inversiones"
-    subtitle="Real Estate Info"
-    tagline="Transformando Espacios y Experiencias"
-    items={[
-      {
-        title: 'Necesitas un bajo capital de inversión',
-        description: "Para invertir en un departamento, solo necesitas el pie, que puede pagarse al contado, en cuotas con cheques, o con Tarjeta de Crédito sin interés.",
-        icon: 'flat-color-icons:template',
-      },
-      {
-        title: 'Inversión segura y estable',
-        description:
-          "La rentabilidad y plusvalía son clave, por eso nuestros proyectos están cerca de metro, autopistas y servicios, aumentando la demanda de arriendo.",
-        icon: 'flat-color-icons:gallery',
-      },
-      {
-        title: 'Aumentas tu patrimonio y mejoras tu jubilación',
-        description:
-          'El mercado inmobiliario es una inversión rentable y segura frente a la volatilidad de otros instrumentos financieros.',
-        icon: 'flat-color-icons:approval',
-      },
-    ]}
-  >
-    <Fragment slot="bg">
-      <div class="absolute inset-0 bg-blue-50 dark:bg-transparent"></div>
-    </Fragment>
-  </Features2-->
- 
-
   <!-- HighlightedPosts Widget ******* -->
 
   <!--BlogLatestPosts
@@ -327,11 +290,47 @@ const metadata = {
     id="Ubicacion"
     subtitle=""
     classes={{ container: 'max-w-6xl' }}
-    />
+  />
+
+  <!-- HeroBigGrid Widget ******************* -->
+  
+   <HeroBigGrid id="hero-big-grid" />
+   
+  <!-- Features2 Widget ************** -->
+
+  <Features2
+  id="Inversiones1"
+  title="Inversiones"
+  subtitle="Real Estate Info"
+  tagline="Transformando Espacios y Experiencias"
+  items={[
+    {
+      title: 'Necesitas un bajo capital de inversión',
+      description: "Para invertir en un departamento, solo necesitas el pie, que puede pagarse al contado, en cuotas con cheques, o con Tarjeta de Crédito sin interés.",
+      icon: 'flat-color-icons:template',
+    },
+    {
+      title: 'Inversión segura y estable',
+      description:
+        "La rentabilidad y plusvalía son clave, por eso nuestros proyectos están cerca de metro, autopistas y servicios, aumentando la demanda de arriendo.",
+      icon: 'flat-color-icons:gallery',
+    },
+    {
+      title: 'Aumentas tu patrimonio y mejoras tu jubilación',
+      description:
+        'El mercado inmobiliario es una inversión rentable y segura frente a la volatilidad de otros instrumentos financieros.',
+      icon: 'flat-color-icons:approval',
+    },
+  ]}
+>
+  <Fragment slot="bg">
+    <div class="absolute inset-0 bg-blue-50 dark:bg-transparent"></div>
+  </Fragment>
+  </Features2>
 
   <Brands
-  id="Inversiones"
-  title="Inversiones"
+  id="Inversiones2"
+  title=""
   subtitle=""
   icons={[]}
   images={[
@@ -344,16 +343,16 @@ const metadata = {
       alt: 'Patagonia Insular',
     },
     {
-      src: 'https://realestate.enterprises.cl/wp-content/uploads/2021/06/logo-pilares-175x50-c-center.png',
+      src: 'https://neighbourspa-176512119.imgix.net/logo-pilares-175x50-c-center.webp',
       alt: 'Pilares',
     },
 
     {
-      src: 'https://realestate.enterprises.cl/wp-content/uploads/2021/06/logo-Vial-copia-150x50-1.png',
+      src: 'https://neighbourspa-176512119.imgix.net/logo-Vial-copia-150x50-1.webp',
       alt: 'Vial Siglo XXII',
     },
     {
-      src: 'https://realestate.enterprises.cl/wp-content/uploads/2021/06/Socovesa.png',
+      src: 'https://neighbourspa-176512119.imgix.net/Socovesa.webp',
       alt: 'Socovesa',
     },
   ]}

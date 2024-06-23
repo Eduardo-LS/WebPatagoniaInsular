@@ -44,18 +44,18 @@ export const headerData = {
           href: getPermalink('/#hero-big-grid')
         },
         {
-          text: 'Flora y Fauna',
-          href: getPermalink('homes/personal')
+          text: 'Cercanías',
+          href: getPermalink('landing/product')
         },
         {
-          text: 'Cercanías',
-          href: getPermalink('/#')
+          text: 'Flora y Fauna',
+          href: getPermalink('homes/personal')
         }
       ],
     },
     {
       text: 'Inversiones',
-      href: getPermalink('/#Inversiones'),
+      href: getPermalink('/#Inversiones1'),
       /*links: [
         {
           text: 'Lead Generation',
@@ -109,7 +109,7 @@ export const headerData = {
       ],
     },*/
     {
-      text: 'Bonos_verdes',
+      text: 'Bonos verdes',
       href: getPermalink('/#')
     },
     /*{
@@ -117,7 +117,7 @@ export const headerData = {
       href: 'contact', 
     },*/
   ],
-  actions: [{ text: 'Download', href: 'https://github.com/onwidget/astrowind', target: '_blank' }],
+  actions: [{ text: 'Cotizar', href: 'pricing', target: '_blank' }],
 };
 
 export const footerData = {
