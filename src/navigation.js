@@ -44,12 +44,12 @@ export const headerData = {
           href: getPermalink('/#hero-big-grid')
         },
         {
-          text: 'Cercanías',
-          href: getPermalink('landing/product')
+          text: 'Características',
+          href: getPermalink('caracteristicas')
         },
         {
           text: 'Flora y Fauna',
-          href: getPermalink('homes/personal')
+          href: getPermalink('homes/florayfauna')
         }
       ],
     },

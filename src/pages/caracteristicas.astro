@@ -1,0 +1,186 @@
+---
+import Features2 from '~/components/widgets/Features2.astro';
+import Features3 from '~/components/widgets/Features3.astro';
+//import Hero from '~/components/widgets/Hero.astro';
+import Hero3 from '~/components/widgets/Hero3.astro';
+//import Stats from '~/components/widgets/Stats.astro';
+import Steps2 from '~/components/widgets/Steps2.astro';
+import Layout from '~/layouts/PageLayout.astro';
+
+const metadata = {
+  title: 'SRE - Detalles de la zona',
+};
+---
+
+<Layout metadata={metadata}>
+  <!-- Hero Widget ******************* -->
+
+  <Hero3
+    tagline=""
+    image={{
+      src: 'https://neighbourspa-176512119.imgix.net/segmetacion_terreno.webp',
+      alt: 'Cercanías Img',
+    }}
+  >
+    <Fragment slot="title">
+      Segmentación del terreno
+      <!--span class="text-accent dark:text-white highlight"> Beautiful Website Templates</span-->
+    </Fragment>
+
+    <Fragment slot="subtitle">
+      El proyecto abarca 226 hectáreas en la vertiente occidental de la Cordillera de la Costa, conocida como Cordillera del Piuchén. 
+      Se divide en tres sectores: A, B y C, cada uno con características únicas y parcelas de al menos 5,000 m².
+    </Fragment>
+  </Hero3>
+
+  <!-- Stats Widget ****************** -->
+
+  <!--Stats
+    title="Statistics about us"
+    stats={[
+      { title: 'Offices', amount: '4' },
+      { title: 'Employees', amount: '248' },
+      { title: 'Templates', amount: '12' },
+      { title: 'Awards', amount: '24' },
+    ]}
+  /-->
+
+  <!-- Features3 Widget ************** -->
+
+  <Features3
+    title="Características y Cercanías"
+    subtitle="Posee un camino interior denominado Senda del Melly que es una ruta transitada por los turistas amantes del trekking ya que recorre desde el Pacifico al Parque Nacional Chiloé."
+    columns={3}
+    isBeforeContent={true}
+    items={[
+      {
+        title: 'Sector A',
+        description:
+          'Orientado al imponente océano pacífico con un bello sector de playas y árboles que llegan a la orilla del mar. Cercano a lugares de paseo, con espectaculares vistas panorámicas de bosques milenarios prístinos.',
+        icon: 'tabler:template',
+      },
+      {
+        title: 'Sector B',
+        description:
+          'Se proyecta en esta área el desarrollo de eco hoteles de primer nivel entre los campos de árboles nativos. Es cruzada por la senda Meli, acceso al parque nacional de Chiloé desde el Océano Pacífico.',
+        icon: 'tabler:template',
+      },
+      {
+        title: 'Sector C',
+        description:
+          'La localidad posee una impresionante hoya hidrográfica conformada por 8 ríos que se comunican finalmente con el Río Chepu, el más grande y caudaloso de toda la Isla.',
+        icon: 'tabler:template',
+      },
+    ]}
+  />
+
+  <!-- Features3 Widget ************** -->
+
+  <Features3
+    columns={3}
+    isAfterContent={true}
+    image={{
+      src: 'https://neighbourspa-176512119.imgix.net/proyecto_img2.webp',
+      alt: 'Vista',
+    }}
+  />
+
+  <!-- Steps2 Widget ****************** -->
+
+  <!--Steps2
+    title="Sectores"
+    subtitle="Sus condiciones geográficas y la tranquilidad de las aguas de sus ríos son ideales para practicar la pesca deportiva."
+    items={[
+      {
+        title: 'Customer-centric approach',
+        description:
+          'Donec id nibh neque. Quisque et fermentum tortor. Fusce vitae dolor a mauris dignissim commodo. Ut eleifend luctus condimentum.',
+      },
+      {
+        title: 'Constant Improvement',
+        description:
+          'Phasellus laoreet fermentum venenatis. Vivamus dapibus pulvinar arcu eget mattis. Fusce eget mauris leo.',
+      },
+      {
+        title: 'Ethical Practices',
+        description:
+          'Vestibulum imperdiet libero et lectus molestie, et maximus augue porta. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.',
+      },
+    ]}
+  /-->
+
+  <!-- Steps2 Widget ****************** -->
+
+  <!--Steps2
+    title="Achievements"
+    subtitle="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi sagittis, quam nec venenatis lobortis, mi risus tempus nulla, sed porttitor est nibh at nulla."
+    isReversed={true}
+    callToAction={{
+      text: 'See more',
+      href: '/',
+    }}
+    items={[
+      {
+        title: 'Global reach',
+        description: 'Nam malesuada urna in enim imperdiet tincidunt. Phasellus non tincidunt nisi, at elementum mi.',
+        icon: 'tabler:globe',
+      },
+      {
+        title: 'Positive customer feedback and reviews',
+        description:
+          'Cras semper nulla leo, eget laoreet erat cursus sed. Praesent faucibus massa in purus iaculis dictum.',
+        icon: 'tabler:message-star',
+      },
+      {
+        title: 'Awards and recognition as industry experts',
+        description:
+          'Phasellus lacinia cursus velit, eu malesuada magna pretium eu. Etiam aliquet tellus purus, blandit lobortis ex rhoncus vitae.',
+        icon: 'tabler:award',
+      },
+    ]}
+  /-->
+
+  <!-- Features2 Widget ************** -->
+
+  <Features2
+    title="Lotes"
+    tagline="Nuestros"
+    columns={3}
+    items={[
+      {
+        title: 'Lote A',
+        description: ' Cercano a lugares de paseo, vistas de la isla Metalquí, lugar protegido de reproducción de lobos marinos del hemisferio sur. Cerca de las desembocaduras de los ríos Tongoy, Lar, Río Refugio y Metalqui; apropiado para navegación deportiva y aventura que desembocan al mar.',
+      },
+      {
+        title: 'Lote B',
+        description: 'Servicios orientado al desarrollo de Hotelería Eco World Class. Contempla la creación de comercios con productos autóctonos como miel, quesos, variedades de papas y ajos Chilotes generando el emporio de la Senda del Meli.',
+      },
+      {
+        title: 'Lote C',
+        description: 'La localidad posee una impresionante hoya hidrográfica conformada por 8 ríos que se comunican finalmente con el Río Chepu, el más grande y caudaloso de toda la Isla.',
+      },
+    ]}
+  />
+
+  <!-- Features2 Widget ************** -->
+
+  <!--Features2
+    title="Technical Support"
+    tagline="Contact us"
+    columns={2}
+    items={[
+      {
+        title: 'Chat with us',
+        description:
+          'Integer luctus laoreet libero, auctor varius purus rutrum sit amet. Ut nec molestie nisi, quis eleifend mi.',
+        icon: 'tabler:messages',
+      },
+      {
+        title: 'Call us',
+        description:
+          'Mauris faucibus finibus orci, in posuere elit viverra non. In hac habitasse platea dictumst. Cras lobortis metus a hendrerit congue.',
+        icon: 'tabler:headset',
+      },
+    ]}
+  /-->
+</Layout>
