@@ -3,7 +3,7 @@ import { getPermalink } from './utils/permalinks';
 export const headerData = {
   links: [
     {
-      text: 'Inicio',
+      text: 'Principal',
       href: getPermalink('/#hero')
       /*links: [
         {
@@ -41,17 +41,22 @@ export const headerData = {
         },
         {
           text: 'Galería',
-          href: getPermalink('/#hero-big-grid')
-        },
+          href: getPermalink('/#galeria')
+        }
+      ],
+    },
+    {
+      text: 'Características',
+      links: [
         {
-          text: 'Características',
+          text: 'Alrededores',
           href: getPermalink('caracteristicas')
         },
         {
           text: 'Flora y Fauna',
           href: getPermalink('homes/florayfauna')
         }
-      ],
+      ]
     },
     {
       text: 'Inversiones',
@@ -109,8 +114,17 @@ export const headerData = {
       ],
     },*/
     {
-      text: 'Bonos verdes',
-      href: getPermalink('/#')
+      text: 'Bonos',
+      links:[
+        {
+          text: 'Azules',
+          href: getPermalink(''),
+        },
+        {
+          text: 'Verdes',
+          href: getPermalink(''),
+        }
+      ]
     },
     /*{
       text: 'Contáctanos',

@@ -10,6 +10,7 @@ import HeroBigGrid from '~/components/ui/HeroBigGrid.astro';
 //import BlogLatestPosts from '~/components/widgets/BlogLatestPosts.astro';
 import FAQs from '~/components/widgets/FAQs.astro';
 import Brands from '~/components/widgets/Brands.astro';
+import Stats from '~/components/widgets/Stats.astro';
 
 const metadata = {
   title: 'SRE - Stark Real State',
@@ -292,16 +293,25 @@ const metadata = {
     classes={{ container: 'max-w-6xl' }}
   />
 
+    <!-- Stats Widget ****************** -->
+
+    <Stats
+    stats={[
+      { title: 'Emisiones Mundiales CO2', amount: '2.000' },
+      { title: 'Dioxido de Cabono', amount: '36.300 mill' },
+    ]}
+    />
+
   <!-- HeroBigGrid Widget ******************* -->
   
-   <HeroBigGrid id="hero-big-grid" />
+   <HeroBigGrid id="galeria" />
    
   <!-- Features2 Widget ************** -->
 
   <Features2
   id="Inversiones1"
   title="Inversiones"
-  subtitle="Real Estate Info"
+  subtitle=""
   tagline="Transformando Espacios y Experiencias"
   items={[
     {
@@ -330,8 +340,9 @@ const metadata = {
 
   <Brands
   id="Inversiones2"
-  title=""
+  title="Partners"
   subtitle=""
+  tagline="Aliados en Excelencia y Sostenibilidad"
   icons={[]}
   images={[
     {
@@ -355,18 +366,13 @@ const metadata = {
       src: 'https://neighbourspa-176512119.imgix.net/Socovesa.webp',
       alt: 'Socovesa',
     },
+    {
+      src: 'https://app.neighbour.cl/logo_alfa.png',
+      alt: 'Neighbour SpA',
+    }
   ]}
 />
-  <!-- Stats Widget ****************** -->
 
-  <!--Stats
-    stats={[
-      { title: 'Downloads', amount: '132K' },
-      { title: 'Stars', amount: '24.8K' },
-      { title: 'Forks', amount: '10.3K' },
-      { title: 'Users', amount: '48.4K' },
-    ]}
-  /-->
 
   <!-- CallToAction Widget *********** -->
 
